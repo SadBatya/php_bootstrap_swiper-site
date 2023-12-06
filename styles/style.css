@@ -4,12 +4,16 @@
   --button-in-box: #0000;
   --button-text-white: #eeeeee;
   --button-text-black: #030303;
-  --button-color-black: #0000;
+  --button-color-black: #000000;
 }
 body {
   font-family: "Arial", sans-serif;
   background-color: #f0f0f0;
   color: #333;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .header {
   background-color: var(--backround-color);
@@ -59,9 +63,13 @@ body {
   gap: 10px;
   margin-right: 10px;
 }
+.navigation__inner > li {
+  cursor: pointer;
+}
 .container {
   max-width: 1280px;
   margin: 0 auto;
+  flex: 1;
 }
 .boxes {
   display: flex;
@@ -82,17 +90,33 @@ body {
 .box_text {
   padding-bottom: 10px;
   text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-.box_text > ul > li {
+.box_text > li {
   padding-bottom: 10px;
+  cursor: pointer;
 }
 .box_button {
   width: 200px;
   height: 25px;
   background-color: var(--button-color-black);
+  color: var(--button-text-white);
   border-radius: 5px;
   border: none;
   cursor: pointer;
 }
 .slider {
+}
+
+.description {
+  margin: 0 auto;
+}
+
+.footer {
+  text-align: center;
+  color: var(--button-text-white);
+  background-color: var(--backround-color);
+  padding: 20px;
 }
