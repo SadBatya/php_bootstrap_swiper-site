@@ -1,0 +1,98 @@
+:root {
+  --backround-color: #383838;
+  --color-button-header: #ffa000;
+  --button-in-box: #0000;
+  --button-text-white: #eeeeee;
+  --button-text-black: #030303;
+  --button-color-black: #0000;
+}
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+.header {
+  background-color: var(--backround-color);
+}
+.header_inner {
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.header_button {
+  width: 100px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--button-text-black);
+  background-color: var(--color-button-header);
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+}
+.logo_text {
+  font-size: 1.2rem;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.navigation__inner {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-right: 10px;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px 100px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.box_number {
+  padding-bottom: 10px;
+  font-size: 2rem;
+}
+.box_text {
+  padding-bottom: 10px;
+  text-align: start;
+}
+.box_text > ul > li {
+  padding-bottom: 10px;
+}
+.box_button {
+  width: 200px;
+  height: 25px;
+  background-color: var(--button-color-black);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.slider {
+}
