@@ -1,3 +1,5 @@
-import { burgerMenu } from "./burger-menu";
+import { burgerMenu } from './burgerMenu';
+import { initSwiper } from './swiperConfig';
 
-burgerMenu()
+burgerMenu();
+initSwiper();
