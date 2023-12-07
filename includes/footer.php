@@ -1,0 +1,1 @@
+<footer class="footer">2023 CompanyName</footer>
