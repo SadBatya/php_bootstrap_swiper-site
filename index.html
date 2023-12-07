@@ -8,6 +8,10 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="./styles/reset.css"
     />
     <link
@@ -36,6 +40,22 @@
           </ul>
           <button class="header_button">Login</button>
         </nav>
+        <div class="burger">
+          <div class="burger_button">
+            <div class="burger_icon"></div>
+            <div class="burger_icon"></div>
+            <div class="burger_icon"></div>
+            <div class="burger_icon"></div>
+          </div>
+          <div class="burger_menu">
+            <ul>
+              <li class="burger_text"><a href="#">menu 1</a></li>
+              <li class="burger_text"><a href="#">menu 2</a></li>
+              <li class="burger_text"><a href="#">menu 3</a></li>
+              <li class="burger_text"><a href="#">menu 4</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main class="container">
@@ -73,23 +93,7 @@
           <button class="box_button">Button 3</button>
         </div>
       </div>
-      <div class="slider_container">
-        <button id="prev" class="slider_button prev"></button>
-        <div class="slider_inner">
-            <div class="slider_line">
-                <div class="slide">
-                    <img src="./images/image-1.jpeg" alt="image-1">
-                </div>
-                <div class="slide">
-                    <img src="./images/image-2.jpeg" alt="image-2">
-                </div>
-                <div class="slide">
-                    <img src="./images/image-3.jpeg" alt="image-3">
-                </div>
-            </div>
-        </div>
-        <button id="next" class="slider_button next"></button>
-      </div>
+      
       <p class="description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
         quasi quam recusandae beatae quod nostrum earum assumenda, corporis
@@ -100,6 +104,10 @@
       </p>
     </main>
     <footer class="footer">2023 CompanyName</footer>
+    <script src="./js/burger-menu.js"></script>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/slider.js"></script>
   </body>
 </html>

@@ -15,6 +15,10 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+.stop-scroll{
+  overflow: hidden;
+  margin-right: 15px;
+}
 .header {
   background-color: var(--backround-color);
 }
@@ -40,7 +44,6 @@ body {
 }
 .logo {
   display: flex;
-   
   align-items: center;
   gap: 10px;
 }
@@ -53,19 +56,22 @@ body {
 }
 .navigation {
   display: flex;
-   
   gap: 10px;
   align-items: center;
 }
 .navigation__inner {
   display: flex;
-   
   gap: 10px;
   margin-right: 10px;
 }
 .navigation__inner > li {
   cursor: pointer;
 }
+
+.burger{
+  display: none;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -73,7 +79,6 @@ body {
 }
 .boxes {
   display: flex;
-   
   justify-content: space-between;
   margin: 50px 100px;
 }
@@ -112,46 +117,17 @@ body {
   font-size: 1rem;
 }
 
-.slider_container {
-  position: relative;
-  max-width: 1280px;
-  margin: 0 auto;
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 20px;
-}
-
-.slider_inner{
-  width: 1024px;
-  overflow: hidden;
-}
-
-.slider_line {
-  display: flex;
-  position: relative;
-  left: 20px;
-  transition: all .3s;
-}
-
-.slide {
-  width: 1024px;
-}
-
-.slide img {
-  width: 1024px;
-}
-
-.slider_button {
-  width: 40px;
-  height: 200px;
-}
-
-.slider_button.next::before {
-  content: '';
-  border-style: solid;
-  border-width: 10px 15px 10px 0;
-  border-color: transparent #fff transparent transparent;
+  justify-content: center;
+  /* Дополнительные стили для слайда */
 }
 
 .description {
@@ -166,6 +142,9 @@ body {
 }
 
 @media (max-width: 699px){
+  .navigation {
+    display: none;
+  }
   .boxes {
     display: flex;
     flex-direction: column;
@@ -176,5 +155,61 @@ body {
   }
   .box_text {
     text-align: center;
+  }
+  
+  .burger{
+    display: block;
+  }
+  .burger_button{
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+    z-index: 10;
+  }
+  .burger_icon {
+    width: 30px;
+    height: 2px;
+    margin-bottom: 3px;
+    background-color: black;
+    border: 3px;
+  }
+  
+  .burger_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(128, 128, 128);
+    font-size: 0px;
+  }
+
+  .show{
+    width: 200px;
+    font-size: 20px;
+  }
+  
+  .burger_text{
+    margin-bottom: 30px;
+    padding: 5px;
+    border-radius: 3px;
+  }
+
+  .text_none{
+    display: block;
+  }
+  
+  .burger_text > a {
+    text-decoration: none;
+    color: var(--button-text-black);
+  }
+  .burger_text {
+    transition: .3s;
+  }
+  .burger_text:hover{
+    background-color: rgb(176, 175, 175);
   }
 }
