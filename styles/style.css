@@ -68,6 +68,10 @@ body {
   cursor: pointer;
 }
 
+.navigation__inner > li:hover{
+  text-decoration: underline;
+}
+
 .burger{
   display: none;
 }
@@ -117,9 +121,25 @@ body {
   font-size: 1rem;
 }
 
-.swiper-container {
-  width: 100%;
-  height: 100%;
+.swiper {
+  width: 800px;
+  height: 500px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 899px) {
+  .swiper {
+    width: 500px;
+  }
+  .swiper-button-prev, .swiper-button-next{
+    display: none;
+  }
+  
+}
+@media (max-width: 510px){
+  .swiper{
+    width: 300px;
+  }
 }
 
 .swiper-slide {
@@ -127,11 +147,35 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 200px;
   /* Дополнительные стили для слайда */
 }
 
 .description {
   margin: 0 auto;
+  width: 50%;
+  margin-bottom: 100px;
+}
+
+.my_contacts {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.my_conctacts-inner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--button-text-black);
+  transition: .3s all ease-in-out;
+}
+
+.my_conctacts-inner:hover {
+  scale: 1.02;
+  text-decoration: dotted;
 }
 
 .footer {

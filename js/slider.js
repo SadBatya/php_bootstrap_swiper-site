@@ -52,7 +52,3 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
-
-window.addEventListener('resize', function () {
-  swiper.update();
-});
