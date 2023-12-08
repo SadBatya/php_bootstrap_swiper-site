@@ -1,21 +1,21 @@
-<header class="header">
-      <div class="header_inner">
-        <div class="logo">
+<header class="header bg-dark">
+      <div class="container d-flex justify-content-between text-white">
+        <div class="logo d-flex align-items-center">
           <img
             src="./images/heart.png"
             alt="icon_company"
             class="icon"
           />
-          <div class="logo_text">CompanyName</div>
+          <div class="logo_text fs-4">CompanyName</div>
         </div>
         <nav class="navigation">
-          <ul class="navigation__inner">
-            <li>Menu 1</li>
-            <li>Menu 2</li>
-            <li>Menu 3</li>
-            <li>Menu 4</li>
+          <ul class="navigation__inner d-flex gap-2">
+            <li class="nav-item">Menu 1</li>
+            <li class="nav-item">Menu 2</li>
+            <li class="nav-item">Menu 3</li>
+            <li class="nav-item">Menu 4</li>
           </ul>
-          <button class="header_button">Login</button>
+          <button class="btn btn-warning">Login</button>
         </nav>
         <div class="burger">
           <div class="burger_button">

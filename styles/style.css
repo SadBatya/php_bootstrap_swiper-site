@@ -6,8 +6,9 @@
   --button-text-black: #030303;
   --button-color-black: #000000;
 }
+
 body {
-  font-family: "Arial", sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: #f0f0f0;
   color: #333;
   margin: 0;
@@ -15,13 +16,17 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-.stop-scroll{
+
+.stop-scroll {
   overflow: hidden;
   margin-right: 15px;
 }
+
 .header {
   background-color: var(--backround-color);
+  padding: 20px;
 }
+
 .header_inner {
   color: #fff;
   padding: 10px;
@@ -30,72 +35,69 @@ body {
   max-width: 1280px;
   margin: 0 auto;
 }
-.header_button {
-  width: 100px;
-  height: 25px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--button-text-black);
-  background-color: var(--color-button-header);
-}
+
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .icon {
   width: 40px;
   height: 40px;
 }
+
 .logo_text {
   font-size: 1.2rem;
 }
+
 .navigation {
   display: flex;
   gap: 10px;
   align-items: center;
 }
+
 .navigation__inner {
   display: flex;
   gap: 10px;
   margin-right: 10px;
 }
+
 .navigation__inner > li {
   cursor: pointer;
 }
 
-.navigation__inner > li:hover{
+.navigation__inner > li:hover {
   text-decoration: underline;
 }
 
-.burger{
+.burger {
   display: none;
 }
 
 .container {
   max-width: 1280px;
   margin: 0 auto;
-  flex: 1;
 }
+
 .boxes {
   display: flex;
   justify-content: space-between;
   margin: 50px 100px;
 }
+
 .box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
 }
+
 .box_number {
   padding-bottom: 10px;
   font-size: 2rem;
 }
+
 .box_text {
   padding-bottom: 10px;
   text-align: start;
@@ -103,9 +105,11 @@ body {
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .box_text > li {
   padding-bottom: 10px;
 }
+
 .box_button {
   display: flex;
   align-items: center;
@@ -131,13 +135,15 @@ body {
   .swiper {
     width: 500px;
   }
-  .swiper-button-prev, .swiper-button-next{
+
+  .swiper-button-prev,
+  .swiper-button-next {
     display: none;
   }
-  
 }
-@media (max-width: 510px){
-  .swiper{
+
+@media (max-width: 510px) {
+  .swiper {
     width: 300px;
   }
 }
@@ -148,7 +154,6 @@ body {
   align-items: center;
   justify-content: center;
   width: 200px;
-  /* Дополнительные стили для слайда */
 }
 
 .description {
@@ -163,14 +168,14 @@ body {
   margin-bottom: 50px;
 }
 
-.my_conctacts-inner{
+.my_conctacts-inner {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   text-decoration: none;
   color: var(--button-text-black);
-  transition: .3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 .my_conctacts-inner:hover {
@@ -185,31 +190,36 @@ body {
   padding: 20px;
 }
 
-@media (max-width: 699px){
+@media (max-width: 699px) {
   .navigation {
     display: none;
   }
+
   .boxes {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
   .box {
     margin-bottom: 50px;
   }
+
   .box_text {
     text-align: center;
   }
-  
-  .burger{
+
+  .burger {
     display: block;
   }
-  .burger_button{
+
+  .burger_button {
     cursor: pointer;
     position: relative;
     top: 15px;
     z-index: 10;
   }
+
   .burger_icon {
     width: 30px;
     height: 2px;
@@ -217,8 +227,8 @@ body {
     background-color: black;
     border: 3px;
   }
-  
-  .burger_menu{
+
+  .burger_menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -231,29 +241,31 @@ body {
     font-size: 0px;
   }
 
-  .show{
+  .show {
     width: 200px;
     font-size: 20px;
   }
-  
-  .burger_text{
+
+  .burger_text {
     margin-bottom: 30px;
     padding: 5px;
     border-radius: 3px;
   }
 
-  .text_none{
+  .text_none {
     display: block;
   }
-  
+
   .burger_text > a {
     text-decoration: none;
     color: var(--button-text-black);
   }
+
   .burger_text {
-    transition: .3s;
+    transition: 0.3s;
   }
-  .burger_text:hover{
+
+  .burger_text:hover {
     background-color: rgb(176, 175, 175);
   }
 }
